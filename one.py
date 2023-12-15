@@ -13,8 +13,8 @@ def Start():
                 if not data:
                     break
                 conn.sendall(interpret(data))
-                
+    return
+
 def interpret(s:bytes):
-    print(s)
     if s == b'Hello, world':
         return b'i\'m unenthusiastic'
